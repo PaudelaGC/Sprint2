@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS `PauGuillenPizzeria`.`Productes` (
   `Descripció` VARCHAR(40) NOT NULL,
   `Imatge` VARBINARY(1) NOT NULL,
   `Preu` FLOAT NOT NULL,
-  `Tipus` JSON NOT NULL,
+  `Tipus` VARCHAR(12) NOT NULL,
   `Categoria` SMALLINT NULL,
   PRIMARY KEY (`Id`),
   UNIQUE INDEX `Id_UNIQUE` (`Id` ASC) VISIBLE,
