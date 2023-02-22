@@ -1,26 +1,26 @@
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('3', '2', '2');
+values ('1', '2', '2');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('3', '1', '1');
+values ('1', '1', '1');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('3', '5', '1');
+values ('1', '5', '1');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('3', '7', '2');
+values ('1', '7', '2');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('3', '9', '1');
+values ('1', '9', '1');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('4', '3', '4');
+values ('2', '3', '4');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('4', '4', '4');
+values ('2', '4', '4');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('4', '6', '4');
+values ('2', '6', '4');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('5', '1', '3');
+values ('3', '1', '3');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('5', '2', '3');
+values ('3', '2', '3');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('5', '3', '3');
+values ('3', '3', '3');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('5', '7', '3');
+values ('3', '7', '3');
 insert into `productes demanats` (Comanda, Producte, Quantitat)
-values ('6', '9', '2');
+values ('4', '9', '2');
