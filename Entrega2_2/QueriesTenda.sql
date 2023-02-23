@@ -35,6 +35,11 @@ select fabricante.nombre, fabricante.codigo from fabricante join producto on fab
 select fabricante.nombre, producto.nombre from fabricante left join producto on fabricante.codigo = producto.codigo_fabricante; -- Q34
 select * from fabricante left join producto on fabricante.codigo = producto.codigo_fabricante where not exists (select * where fabricante.codigo = producto.codigo_fabricante); -- Q35
 select producto.nombre from producto left join fabricante on fabricante.codigo = producto.codigo_fabricante where fabricante.nombre = 'Lenovo'; -- Q36
+select * from producto where precio = (select max(precio) from producto left join fabricante on fabricante.codigo = producto.codigo_fabricante where fabricante.nombre = 'Lenovo'); -- Q37
+select producto.nombre from producto inner join fabricante on fabricante.codigo = producto.codigo_fabricante where fabricante.nombre = 'Lenovo' order by precio desc limit 1; -- Q38
+select producto.nombre from producto inner join fabricante on fabricante.codigo = producto.codigo_fabricante where fabricante.nombre = 'Hewlett-Packard' order by precio asc limit 1; -- Q39
+select * from producto where precio > (select max(precio) from producto  inner join fabricante on fabricante.codigo = producto.codigo_fabricante where fabricante.nombre = 'Lenovo'); -- Q40
+select * from producto join fabricante on fabricante.codigo = producto.codigo_fabricante where fabricante.nombre = 'Asus' and precio > (select avg(precio) from producto join fabricante on fabricante.codigo = producto.codigo_fabricante where fabricante.nombre = 'Asus'); -- Q41
 
 
 
